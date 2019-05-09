@@ -1,0 +1,42 @@
+# Kontury terenu (wymienione w kolejności łączenia): Lp. x y
+1. 0 0
+2. 0 600
+3. 600 600
+4. 600 0
+
+# Punkty kluczowe: Lp. x y Nazwa
+1. 1 1 KOK Krawczyka
+2. 1 19 KOK Kaczmarskiego
+3. 30 10 KOK Łazarewicza
+3. 320 150 KOK Karolika Antona
+4. 440 200 KOK Jelenewicza Piotra
+3. 220 400 KOK Karolika Aliaksandra
+3. 180 234 KOK Jelenewicza Michała
+3. 450 500 KOK Łazarewicza423
+3. 350 500 KOK Łazarewicza1
+3. 500 300 KOK Łazarewicza2
+3. 321 180 KOK Łazarewicza3
+3. 412 342 KOK Łazarewicza4
+3. 200 550 KOK Łazarewicza5
+3. 150 480 KOK Łazarewicza6
+3. 180 385 KOK Łazarewicza7
+3. 390 259 KOK Łazarewicza8
+3. 332 412 KOK Łazarewicza
+3. 230 190 KOK Łazarewicza
+3. 320 210 KOK Łazarewicza
+3. 360 240 KOK Łazarewicza
+
+# Definicje obiektów: Lp. Typ_obiektu (Nazwa_zmiennej Typ_zmiennej)*
+1. SZKOŁA Nazwa String X double Y double
+2. DOM X double Y double L_MIESZKAŃCÓW int
+3. NIEDŹWIEDŹ X double Y double
+
+# Obiekty: Typ_obiektu (zgodnie z definicją)
+1. SZKOŁA "Szkoła robienia dużych pieniędzy"  4 1
+2. DOM 4 3 100
+3. DOM 4 17 120
+4. DOM 4 18 80
+5. NIEDŹWIEDŹ 20 20
+6. NIEDŹWIEDŹ 40 1
+7. NIEDŹWIEDŹ 39 1
+8. NIEDŹWIEDŹ 39 2

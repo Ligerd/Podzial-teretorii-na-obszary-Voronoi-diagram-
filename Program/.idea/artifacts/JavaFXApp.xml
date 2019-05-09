@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="JavaFXApp">
+    <output-path />
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="JavaFXApp.jar">
+        <element id="module-output" name="DiagramVoronoi" />
+        <element id="module-output" name="Program" />
+      </element>
+    </root>
+  </artifact>
+</component>

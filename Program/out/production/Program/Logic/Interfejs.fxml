@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logic.GUIController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Plik">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#readFile" text="Otwórz plik z danymi" />
+            <MenuItem mnemonicParsing="false" onAction="#readFileImage" text="Otwórz plik graficzny" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <SplitPane dividerPositions="0.24610244988864144, 0.7561247216035635" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <items>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TextArea editable="false" prefHeight="42.0" prefWidth="153.0" text="Elementy kontutru:&#10;" />
+                  <HBox prefHeight="27.0" prefWidth="222.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#createContourWindow" prefHeight="26.0" prefWidth="76.0" text="Dodaj" />
+                        <AnchorPane maxHeight="26.0" prefHeight="26.0" prefWidth="114.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#removeContourPoint" prefWidth="76.0" text="Usuń" />
+                     </children>
+                  </HBox>
+                  <ScrollPane prefHeight="241.0" prefWidth="222.0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox fx:id="contourPointsBox" prefWidth="215.0" />
+                     </content></ScrollPane>
+                  <TextArea editable="false" prefHeight="4.0" prefWidth="222.0" text="Punkty kluczowe:" />
+                  <HBox prefHeight="27.0" prefWidth="222.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#createKeyPointWindow" prefWidth="76.0" text="Dodaj" />
+                        <AnchorPane prefHeight="26.0" prefWidth="114.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#removeKeyPointFromList" prefWidth="76.0" text="Usuń" />
+                     </children>
+                  </HBox>
+                  <ScrollPane fitToHeight="true" prefHeight="241.0" prefWidth="222.0">
+                     <content>
+                        <VBox fx:id="keyPointsBox" prefHeight="212.0" prefWidth="215.0" />
+                     </content></ScrollPane>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <TextArea editable="false" prefHeight="42.0" prefWidth="450.0" text="                                         Mapa terenu:&#10;" />
+                  <Pane fx:id="mainPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="450.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TextArea editable="false" prefHeight="22.0" prefWidth="220.0" text="Obiekty danego obszaru:" />
+                  <ScrollPane prefHeight="220.0" prefWidth="220.0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox fx:id="regionObjectsBox" prefHeight="241.0" prefWidth="210.0" />
+                     </content></ScrollPane>
+                  <TextArea editable="false" prefHeight="17.0" prefWidth="215.0" text="Obiekty danego typu:&#10;" />
+                  <StackPane>
+                     <children>
+                        <VBox prefHeight="241.0" prefWidth="209.0">
+                           <children>
+                              <ScrollPane prefHeight="52.0" prefWidth="209.0">
+                                 <content>
+                                    <VBox fx:id="setObjectTypeBox" prefHeight="69.0" prefWidth="191.0" />
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane prefHeight="200.0" prefWidth="220.0">
+                                 <content>
+                                    <VBox fx:id="typeObjectsBox" prefHeight="192.0" prefWidth="189.0" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </items>
+    </SplitPane>
+  </children>
+</VBox>

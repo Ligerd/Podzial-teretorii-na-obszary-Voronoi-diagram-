@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="128.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logic.PopupWindowController">
+   <children>
+      <HBox />
+      <TextField layoutX="6.0" layoutY="51.0" onAction="#makeKeyPoint" prefHeight="26.0" prefWidth="60.0" fx:id="xTextField" />
+      <TextField fx:id="nameTextField" layoutX="81.0" layoutY="51.0" onAction="#makeKeyPoint" prefHeight="26.0" prefWidth="139.0" />
+      <TextField fx:id="yTextField" layoutX="235.0" layoutY="51.0" onAction="#makeKeyPoint" prefHeight="26.0" prefWidth="60.0" />
+      <Button layoutX="132.0" layoutY="101.0" mnemonicParsing="false" onAction="#makeKeyPoint" text="OK" />
+      <Text layoutX="32.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+      <Text layoutX="261.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" />
+      <Text layoutX="73.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj współrzędne punktu:" wrappingWidth="178.82373046875" />
+      <Text layoutX="102.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwa punktu:" />
+   </children>
+</Pane>
