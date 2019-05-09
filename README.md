@@ -1,1 +1,0 @@
-# Podzial-teretorii-na-obszary-Voronoi-diagram-
