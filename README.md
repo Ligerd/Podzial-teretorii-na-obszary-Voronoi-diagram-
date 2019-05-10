@@ -49,3 +49,5 @@ Obiekty: Typ_obiektu (zgodnie z definicją)
 6. NIEDŹWIEDŹ 40 1
 7. NIEDŹWIEDŹ 39 1
 8. NIEDŹWIEDŹ 39 2
+
+Dokładną informację o projekcie można przeczytać w specyfikacjach projektu.
