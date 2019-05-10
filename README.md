@@ -5,9 +5,10 @@ Programu muszi umożliwiać:
 
 a.) wczytanie konturu analizowanego terenu wraz z umiejscowieniem punktów kluczowych (banki, parabanki, kasy oszczędnościowo-kredytowe);
 
-
 b.) narysowanie optymalnych granic obszarów (na danym obszarze mieści się tylko jeden punkt kluczowy);
-c.) naniesienie na wczytany teren (mapę) obiektów, które podlegają analizie zespołu LUPA;
+
+c.) naniesienie na wczytany teren (mapę) obiektów, które podlegają analizie ;
+
 d.) definiowanie typów obiektów / budynków, które mogą podlegać analizie;
 
 w trakcie działania programu:
