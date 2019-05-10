@@ -1,6 +1,5 @@
 # Podzial-teretorii-na-obszary-Voronoi-diagram-
-## Opis wymagań
-Programu muszi umożliwiać:
+## Programu umożliwia:
 
 a.) wczytanie konturu analizowanego terenu wraz z umiejscowieniem punktów kluczowych (banki, parabanki, kasy oszczędnościowo-kredytowe);
 
